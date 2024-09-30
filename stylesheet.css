@@ -1,0 +1,53 @@
+.section{
+    scroll-margin-top: 163px;
+    padding: 20px 20px 20px 20px;
+}
+
+.secHeader {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #182b49;
+    max-height: 500px;
+    overflow: scroll;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+#nav a:hover {
+    background-color: #182b49;
+    color: rgb(255, 255, 255);
+}
+
+#nav a.active {
+    background-color: #041c5a;
+    color: white;
+}
