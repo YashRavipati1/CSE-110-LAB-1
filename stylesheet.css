@@ -8,6 +8,10 @@
     font-weight: bold;
 }
 
+.paragrahText {
+    font-size: 28px;
+}
+
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -20,7 +24,7 @@
     max-height: 500px;
     overflow: scroll;
     padding: 20px;
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     text-align: center;
 }
@@ -47,7 +51,36 @@
     color: rgb(255, 255, 255);
 }
 
+.topLogo {
+    max-width: 400px;
+}
+
 #nav a.active {
     background-color: #041c5a;
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #nav a {
+        display: none;
+    }
+
+    .topLogo {
+        max-width: 75%;
+    }
+
+    .secHeader {
+        font-size: 24px;
+    }
+
+    .paragrahText {
+        font-size: 20px;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
 }
